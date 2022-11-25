@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["import", "react-hooks", "jsx-a11y"],
+  "rules": {
+    "camelcase": ["error"],
+    "quotes": ["error", "single"],
+    "no-duplicate-imports": ["error"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-props-no-spreading": ["error"],
+    "react/no-unescaped-entities": ["error"],
+    "react/jsx-filename-extension": ["off"],
+    "react/jsx-uses-vars": "error"
+  }
+}
