@@ -8,6 +8,4 @@ fi
 echo ">> Deploying contract"
 
 # https://docs.near.org/tools/near-cli#near-dev-deploy
-near dev-deploy --wasmFile smartContracts/build/prescriptions_near.wasm
-
-mv neardev  smartContracts
+near dev-deploy --projectKeyDirectory "smartContracts/neardev" --wasmFile smartContracts/build/prescriptions_near.wasm

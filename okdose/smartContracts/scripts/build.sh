@@ -6,4 +6,10 @@ echo | pwd
 
 near-sdk-js build smartContracts/prescriptions/contract.ts build/prescriptions_near.wasm
 
-mv build smartContracts
+DIR="smartContracts/build/"
+if [ ! -d "$DIR" ]; then
+   mv build smartContracts
+else
+   rsync -av build smartContracts
+   rm -rf build
+fi

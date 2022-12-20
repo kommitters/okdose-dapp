@@ -1,7 +1,7 @@
 {
-  "name": "ava-testing",
-  "version": "1.0.0",
-  "license": "(MIT AND Apache-2.0)",
+  "name": "okdose-dapp-integration-tests",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
   "scripts": {
     "test": "ava"
   },
