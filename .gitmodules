@@ -1,0 +1,3 @@
+[submodule "okdose/okdose-dapp-contracts"]
+	path = okdose/okdose-dapp-contracts
+	url = https://github.com/kommitters/okdose-dapp-contracts.git
