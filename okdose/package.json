@@ -3,6 +3,26 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "type": "module",
+  "scripts": {
+    "build": "./okdose-dapp-contracts/scripts/build.sh",
+    "deploy": "./okdose-dapp-contracts/scripts/deploy.sh"
+  },
+  "dependencies": {
+    "@near-wallet-selector/core": "^7.0.0",
+    "@near-wallet-selector/ledger": "^7.0.0",
+    "@near-wallet-selector/math-wallet": "^7.0.0",
+    "@near-wallet-selector/meteor-wallet": "^7.0.0",
+    "@near-wallet-selector/modal-ui": "^7.0.0",
+    "@near-wallet-selector/my-near-wallet": "^7.0.0",
+    "@near-wallet-selector/near-wallet": "^7.0.0",
+    "@near-wallet-selector/nightly": "^7.0.0",
+    "@near-wallet-selector/nightly-connect": "^7.0.0",
+    "@near-wallet-selector/sender": "^7.0.0",
+    "@near-wallet-selector/wallet-connect": "^7.0.0",
+    "near-api-js": "^0.44.2",
+    "near-cli": "^3.4.0",
+    "near-sdk-js": "0.6.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
