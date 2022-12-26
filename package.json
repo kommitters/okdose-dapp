@@ -1,0 +1,21 @@
+{
+  "name": "okdose-dapp",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "cd okdoseweb && yarn start",
+    "deploy": "cd okdose && yarn deploy",
+    "build": "yarn build:contract && yarn build:web",
+    "build:web": "cd okdose && yarn build",
+    "build:contract": "cd okdose && yarn build",
+    "postinstall": "cd okdose && yarn install && cd .. && cd okdoseweb && yarn install",
+    "lint": "cd okdose && yarn eslint --cache . && cd .. && cd okdoseweb && yarn eslint --cache .",
+    "lint:fix": "cd okdose && yarn eslint --fix . && cd .. && cd okdoseweb && yarn eslint --fix .",
+    "format": "prettier --write './**/*.{js,jsx,ts,css,json}' --config ./.prettierrc"
+  },
+  "devDependencies": {
+    "near-cli": "^3.3.0",
+    "prettier": "^2.8.0"
+  },
+  "dependencies": {}
+}

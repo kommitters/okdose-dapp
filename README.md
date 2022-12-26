@@ -1,6 +1,27 @@
-# .template
+# OKDOSE-dApp
 
-Template repository to create new projects for the @kommitters organization.
+[OKDOSE](https://okdose.co/) is a PWA (progressive web application) for world health. This application helps to calculate the necessary dose for the treatment of tropical diseases, this information is relevant to doctors, especially those working in remote areas without internet access.
+
+OKDOSE-dApp is a project in which OKDOSE will be reformulated to become a decentralized application (dApp) that will be hosted on the [NEAR blockchain](https://near.org/).
+
+## Prerequisites
+
+Install a current version of [Node.js](https://github.com/nodejs/release#release-schedule). NEAR is targeting versions 16+ (version 18 not supported).
+
+
+For windows, before executing the next steps to create a NEAR app, you will need to download the Windows Subsystem for Linux [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+
+## Quick Start
+
+Install dependencies with:
+
+    yarn install
+
+
+To start OKDOSE-dApp run:
+
+    yarn start
 
 ## Changelog
 
