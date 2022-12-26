@@ -1,0 +1,25 @@
+name: OKDOSE dApp - CI
+
+on:
+  pull_request:
+    types: ["opened", "synchronize"]
+
+jobs:
+  build-tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: "Install the project"
+        run: yarn install --frozen-lockfile
+
+      - name: "Run the tests"
+        run: yarn test
+
+      - name: "Run linter"
+        run: yarn lint
