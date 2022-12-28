@@ -1,0 +1,39 @@
+name: OKDOSE dApp - CI
+
+on:
+  pull_request:
+    types: ["opened", "synchronize"]
+
+jobs:
+  build-tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Clone Submodule
+        run: |
+            mkdir -p $HOME/.ssh
+            echo '${{ secrets.OKDOSE_DAPP_CONTRACTS_DEPLOY_KEY }}' > $HOME/.ssh/ssh.key
+            chmod 600 $HOME/.ssh/ssh.key
+            export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/ssh.key"
+            git submodule set-url okdose/okdose-dapp-contracts git@github.com:kommitters/okdose-dapp-contracts.git
+            git submodule update --init --recursive
+            git submodule set-url okdose/okdose-dapp-contracts https://github.com/kommitters/okdose-dapp-contracts.git
+            unset GIT_SSH_COMMAND
+
+      - name: "Install the project"
+        run: yarn
+
+      - name: "Build project"
+        run: yarn build
+
+      - name: "Run the tests"
+        run: yarn test
+
+      - name: "Run linter"
+        run: yarn lint

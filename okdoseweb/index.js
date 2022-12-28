@@ -9,6 +9,7 @@ window.onload = async () => {
   ReactDOM.render(
     <Suspense fallback="loading">
       <App />
-    </Suspense>
-    , document.getElementById('root'));
+    </Suspense>,
+    document.getElementById('root'),
+  );
 };
