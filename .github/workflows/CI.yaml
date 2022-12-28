@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.OKDOSE_DAPP_CONTRACTS_DEPLOY_KEY }}
+          submodules: 'recursive'
 
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-
-      - name: "Initialize contracts submodule"
-        run:  git submodule update --init
 
       - name: "Install the project"
         run: yarn
