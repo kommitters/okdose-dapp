@@ -1,3 +1,4 @@
 node_modules
 dist
 .eslintrc.json
+okdose-dapp-contracts/build
