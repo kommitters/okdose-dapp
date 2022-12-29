@@ -2,3 +2,4 @@ node_modules
 dist
 .eslintrc.json
 okdose-dapp-contracts/build
+babel.config.js
