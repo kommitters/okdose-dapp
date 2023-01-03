@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <main>
-      <p>{ t('leishmaniasis.n_metil_glucamine.name') }</p>
+      <p>{ t('leishmaniasis.types.cl_treatment_time') }</p>
     </main>
   );
 }

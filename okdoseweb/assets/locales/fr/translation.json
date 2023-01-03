@@ -6,10 +6,12 @@
       "dosage_unit": "mg/kg/jour",
       "via": "IM",
       "frequency": "chaque jour",
+      "warning": "Maximum 20 ml par jour. Des doses plus élevées doivent être évaluées par un spécialiste"
+    },
+    "types": {
       "cl_treatment_time": "Leishmaniose Cutanée: 20 jours",
       "ml_treatment_time": "Leishmaniose Cutanéo-muqueuse: 28 jours",
-      "vl_treatment_time": "Leishmaniose Viscérale: 28 jours",
-      "warning": "Maximum 20 ml par jour. Des doses plus élevées doivent être évaluées par un spécialiste"
+      "vl_treatment_time": "Leishmaniose Viscérale: 28 jours"
     }
   }
 }
