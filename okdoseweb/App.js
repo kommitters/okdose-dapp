@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <main>
-      <p>{ t('okdose.description') }</p>
+      <p>{ t('leishmaniasis.n_metil_glucamine.name') }</p>
     </main>
   );
 }
