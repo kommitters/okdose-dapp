@@ -1,5 +1,9 @@
 {
+  "transmission_types": {
+    "transmitted_by_vectors": "Transmitted by Vectors"
+  },
   "leishmaniasis": {
+    "name": "Leishmaniasis",
     "n_metil_glucamine": {
       "name": "N-Metil Glucamine",
       "presentation": "Amp 1500 mg * 5 ml (Sb5 + 405 mg)",

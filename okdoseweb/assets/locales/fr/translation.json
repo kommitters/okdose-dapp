@@ -1,5 +1,9 @@
 {
+  "transmission_types": {
+    "transmitted_by_vectors": "Transmission par Vecteur"
+  },
   "leishmaniasis": {
+    "name": "Leishmaniose",
     "n_metil_glucamine": {
       "name": "Antimoniate de méglumine",
       "presentation": "Amp 1500 mg * 5 ml (Sb5 + 405 mg)",
