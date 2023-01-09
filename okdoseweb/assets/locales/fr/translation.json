@@ -1,5 +1,21 @@
 {
-  "okdose": {
-    "description": "OKDOSE est une application pour aider avec le calcul de la dosage des médicaments et la durée du traitement contre la leishmaniose, le paludisme, le chagas, la rage, la tuberculose et la lèpre."
+  "transmission_types": {
+    "transmitted_by_vectors": "Transmission par Vecteur"
+  },
+  "leishmaniasis": {
+    "name": "Leishmaniose",
+    "n_metil_glucamine": {
+      "name": "Antimoniate de méglumine",
+      "presentation": "Amp 1500 mg * 5 ml (Sb5 + 405 mg)",
+      "dosage_unit": "mg/kg/jour",
+      "via": "IM",
+      "frequency": "chaque jour",
+      "warning": "Maximum 20 ml par jour. Des doses plus élevées doivent être évaluées par un spécialiste"
+    },
+    "types": {
+      "cl_treatment_time": "Leishmaniose Cutanée: 20 jours",
+      "ml_treatment_time": "Leishmaniose Cutanéo-muqueuse: 28 jours",
+      "vl_treatment_time": "Leishmaniose Viscérale: 28 jours"
+    }
   }
 }

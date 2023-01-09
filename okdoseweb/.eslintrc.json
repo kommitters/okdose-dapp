@@ -21,6 +21,8 @@
     "react/jsx-props-no-spreading": ["error"],
     "react/no-unescaped-entities": ["error"],
     "react/jsx-filename-extension": ["off"],
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": ["warn"],
+    "import/no-relative-packages": ["off"]
   }
 }

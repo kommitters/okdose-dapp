@@ -1,5 +1,21 @@
 {
-  "okdose": {
-    "description": "OKDOSE is an application that supports the calculation of the dosage of medications and treatment time for Leishmaniasis, Malaria, Chagas, Rabies, Tuberculosis and Leprosy."
+  "transmission_types": {
+    "transmitted_by_vectors": "Transmitted by Vectors"
+  },
+  "leishmaniasis": {
+    "name": "Leishmaniasis",
+    "n_metil_glucamine": {
+      "name": "N-Metil Glucamine",
+      "presentation": "Amp 1500 mg * 5 ml (Sb5 + 405 mg)",
+      "dosage_unit": "mg/kg/day",
+      "via": "IM",
+      "frequency": "daily",
+      "warning": "Maximum 20 ml per day. Larger doses require specialist evaluation."
+    },
+    "types": {
+      "cl_treatment_time": "Cutaneous Leishmaniasis: 20 days",
+      "ml_treatment_time": "Mucocutaneous Leishmaniasis: 28 days",
+      "vl_treatment_time": "Visceral Leishmaniasis: 28 days"
+    }
   }
 }

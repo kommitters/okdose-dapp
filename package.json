@@ -8,17 +8,22 @@
     "build": "yarn build:contract && yarn build:web",
     "build:web": "cd okdose && yarn build",
     "build:contract": "cd okdose && yarn build",
-    "postinstall": "cd okdose && yarn install && cd ../integration-tests && yarn install && cd ../ && cd okdoseweb && yarn install",
-    "test": "yarn run test:unit && yarn run test:integration",
-    "test:unit": " ",
-    "test:integration": "cd integration-tests && yarn test -- -- \"./okdose/okdose-dapp-contracts/build/prescriptions_near.wasm\"",
+    "postinstall": "cd okdose && yarn install && cd ../ && cd okdoseweb && yarn install",
+    "test": "cd ./okdose/okdose-dapp-contracts && yarn test",
     "lint": "cd okdose && yarn eslint --cache . && cd .. && cd okdoseweb && yarn eslint --cache .",
     "lint:fix": "cd okdose && yarn eslint --fix . && cd .. && cd okdoseweb && yarn eslint --fix .",
     "format": "prettier --write './**/*.{js,jsx,ts,css,json}' --config ./.prettierrc"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^29.2.4",
     "near-cli": "^3.3.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "jest": "29.3",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.8.0"
   },
   "dependencies": {}
 }

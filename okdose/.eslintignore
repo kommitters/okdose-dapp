@@ -3,3 +3,4 @@ dist
 .eslintrc.json
 okdose-dapp-contracts/build
 babel.config.js
+near-wallet.js
