@@ -18,6 +18,14 @@ const resources = {
   },
 };
 
+const options = {
+  order: ['querystring', 'navigator'],
+
+  lookupQuerystring: 'lng',
+  lookupFromPathIndex: 0,
+  lookupFromSubdomainIndex: 0,
+};
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
@@ -26,6 +34,8 @@ i18n
     resources,
     fallbackLng: 'en',
     debug: true,
+    nonExplicitSupportedLngs: true,
+    detection: options,
   });
 
 export default i18n;

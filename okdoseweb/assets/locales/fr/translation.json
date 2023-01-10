@@ -12,6 +12,14 @@
       "frequency": "chaque jour",
       "warning": "Maximum 20 ml par jour. Des doses plus élevées doivent être évaluées par un spécialiste"
     },
+    "sodium_stibogluconate": {
+      "name": "Stibogluconate de sodium",
+      "presentation": "Amp 100 mg/ml",
+      "dosage_unit": "mg/kg/jour",
+      "via": "IM",
+      "frequency": "chaque jour",
+      "warning": "Maximum 6 ml par jour. Des doses plus élevées doivent être évaluées par un spécialiste"
+    },
     "types": {
       "cl_treatment_time": "Leishmaniose Cutanée: 20 jours",
       "ml_treatment_time": "Leishmaniose Cutanéo-muqueuse: 28 jours",
