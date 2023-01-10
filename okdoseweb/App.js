@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { NearInterface } from '../okdose/near/near-interface';
 import { prescribeSodiumStibogluconate } from '../okdose/transmissionTypes/transmittedByVectors/leishmaniasis';
@@ -22,3 +23,7 @@ export default function App({ wallet }) {
     </main>
   );
 }
+
+App.propTypes = {
+  wallet: PropTypes.shape().isRequired,
+};
