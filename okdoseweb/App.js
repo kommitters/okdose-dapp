@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NearInterface } from '../okdose/near/near-interface';
-import { prescribeNMetilGlucamine } from '../okdose/transmissionTypes/transmittedByVectors/leishmaniasis';
+import { prescribeSodiumStibogluconate } from '../okdose/transmissionTypes/transmittedByVectors/leishmaniasis';
 
 export default function App({ wallet }) {
   const { t } = useTranslation();
@@ -10,7 +10,7 @@ export default function App({ wallet }) {
   const [valueFromBlockchain, setValueFromBlockchain] = React.useState({});
 
   React.useEffect(() => {
-    prescribeNMetilGlucamine(nearInterface, 50)
+    prescribeSodiumStibogluconate(nearInterface, 50)
       .then(setValueFromBlockchain)
       .catch(alert);
   }, []);
